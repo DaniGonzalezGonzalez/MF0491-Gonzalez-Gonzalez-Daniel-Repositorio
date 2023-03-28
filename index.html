@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Examen Módulo 1 - Javascript</title>
+</head>
+
+<body class="body">
+  <h1>Ejercicios Examen Javascript</h1>
+  <form class="form-ejercicio-1">
+    <input id="input-motor" type="number" name="dime-tipo-motor" placeholder="1" title="Valores posibles: 1, 2, 3, 4">
+    <p class="info-inputs">Valores posibles: 1, 2, 3, 4</p>
+    <button id="btn-motor">Tipo de motor</button>
+    <p id="mensaje-info-motor"></p>
+  </form>
+
+  <form class="form-ejercicio-2">
+    <input id="numero-par-impar" type="number" name="numero-par-impar" placeholder="2" title="Solo valores superiores a 0">
+    <p class="info-inputs">Valores superiores a 0</p>
+    <button id="btn-numero-par">Número: ¿Par o Impar?</button>
+    <p id="mensaje-info-numero-par-impar"></p>
+  </form>
+
+  <form class="form-ejercicio-3">
+    <input required id="nombre" type="text" name="nombre" placeholder="Mi nombre" title="Campo obligatorio. Solo letras">
+    <input required id="apellidos" type="text" name="apellidos" placeholder="Mis apellidos" title="Campo obligatorio. Solo letras">
+    <p class="info-inputs">Sólo letras</p>
+    <button id="btn-datos">Registrar nombre y apellidos</button>
+  </form>
+
+
+  <form class="form-ejercicio-4">
+    Base <input required id="base" type="number" name="base" placeholder="2" title="Campo obligatorio. Solo números superiores a 0">
+    Altura <input required id="altura" type="number" name="altura" placeholder="2" title="Campo obligatorio. Solo números superiores a 0">
+    <p class="info-inputs">Sólo números superiores a 0</p>
+    <button id="btn-triangulo">Calcular el área de un triángulo</button>
+    <p id="mensaje-area-triangulo"></p>
+  </form>
+
+  <form class="form-ejercicio-5">
+    <div class="ejercicio-5-header">
+      <strong>Añadir número</strong>
+      <label>
+        <input id="input-numeros" type="number" name="añadir-numeros" placeholder="3" pattern="/^[0-9]+$/" title="Sólo números" step="0.01">
+      </label>
+    </div>
+    <div class="container-array-numeros">
+      <button id="btn-añadir-numero">Añadir número</button>
+      <p id="parrafo-array-numeros">Total de Números introducidos</p>
+    </div>
+    <div class="container-numero-mayor">
+      <button id="btn-numero-mayor">Sacar el número mayor</button>
+      <p id="numero-array-mayor"><strong style=color:red>Número mayor</strong></p>
+    </div>
+  </form>
+  <script type="module" src="main.js"></script>
+</body>
+</html>

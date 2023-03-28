@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+button {
+  width: 30vw;
+  min-width: 100px;
+}
+
+form input {
+  display: block;
+}
+
+.form-ejercicio-2, .form-ejercicio-4 {
+  border-radius: .3rem;
+  padding: 1rem;
+  background-color:rgba(219, 219, 219, 0.952);
+}
+
+.form-ejercicio-1, .form-ejercicio-3, .form-ejercicio-5  {
+  border-radius: .3rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color:rgba(225, 236, 245, 0.952);
+
+}
+  .ejercicio-5-header {
+    display: flex;
+    padding: 1rem;
+
+    text-align: center;
+  }
+    .ejercicio-5-header strong {
+      position: relative;
+      top: 1rem;
+      right: .5rem;
+    }
+    .ejercicio-5-header input {
+      position: relative;
+      left: 1.5rem;
+      width: 60vw;
+    }
+
+  .container-array-numeros {
+    display: flex;
+  }
+    .container-array-numeros p  {
+      position: relative;
+      top: 1rem;
+      left: 1rem;  
+    }
+
+    .container-numero-mayor {
+      display: flex;
+    }
+      .container-numero-mayor p  {
+        position: relative;
+        top: 1rem;
+        left: 1rem;  
+      }
+
+.info-inputs {
+  font-size: smaller;
+  color: green;
+}
